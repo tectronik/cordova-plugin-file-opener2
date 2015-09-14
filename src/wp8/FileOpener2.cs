@@ -18,7 +18,6 @@ namespace WPCordovaClassLib.Cordova.Commands
         {
             string[] args = JSON.JsonHelper.Deserialize<string[]>(options);
             this.openPath(args[0].Replace("/", "\\"), args[2]);
-            string[] args = JSON.JsonHelper.Deserialize<string[]>(options);
         }
         
         private async void openPath(string path, string cbid)
