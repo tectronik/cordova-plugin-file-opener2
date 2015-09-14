@@ -17,7 +17,7 @@ Installation
     
 PhoneGap Build
 ---------------
-This plugin is also avaible via [npm](https://www.npmjs.com/package/cordova-plugin-file-opener2-tectronik) and it can be found with [Cordova Plugin Search](http://plugins.cordova.io/npm/index.html).
+This plugin is also avaible via [npm](https://www.npmjs.com/package/cordova-plugin-file-opener2-tectronik) and it can be found with [Cordova Plugin Search](http://plugins.cordova.io/npm/index.html?q=cordova-plugin-file-opener2-tectronik).
 Add to your `config.xml`:
 
     <gap:plugin name="cordova-plugin-file-opener2-tectronik" source="npm" />
