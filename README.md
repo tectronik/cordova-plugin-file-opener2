@@ -1,6 +1,10 @@
-A File Opener Plugin for Cordova (fork)
+A File Opener Plugin for Cordova (fork of the original version)
 ==========================
 This plugin will open a file on your device file system with its default application.
+
+Original File Opener Plugin
+-------------
+[https://github.com/pwlin/cordova-plugin-file-opener2](https://github.com/pwlin/cordova-plugin-file-opener2)
 
 Requirements
 -------------
@@ -9,14 +13,14 @@ Requirements
 
 Installation
 -------------
-    cordova plugin add https://github.com/pwlin/cordova-plugin-file-opener2
+    cordova plugin add https://github.com/tectronik/cordova-plugin-file-opener2-tectronik
     
 PhoneGap Build
 ---------------
-This Plugin is also available in PhoneGap Build Repository. Go to [https://build.phonegap.com/](https://build.phonegap.com/)
-And search for `io.github.pwlin.cordova.plugins.fileopener2`
-(There are a couple of other forks out there which are mostly out of date. Make sure to download the one with the exact same id as mentioned above) 
+This plugin is also avaible via [npm](https://www.npmjs.com/package/cordova-plugin-file-opener2-tectronik) and it can be found with [Cordova Plugin Search](http://plugins.cordova.io/npm/index.html).
+Add to your `config.xml`:
 
+    <gap:plugin name="cordova-plugin-file-opener2-tectronik" source="npm" />
 
 Usage
 ------
@@ -30,7 +34,7 @@ Open an APK install dialog:
 Open a PDF document with the default PDF reader and optional callback object:
 
     cordova.plugins.fileOpener2.open(
-        '/sdcard/Download/starwars.pdf', // You can also use a Cordova-style file uri: cdvfile://localhost/persistent/Download/starwars.pdf
+        '/sdcard/Download/starwars.pdf',
         'application/pdf', 
         { 
             error : function(e) { 
@@ -46,7 +50,6 @@ Notes
 ------
 
 - For properly opening a PDF file, you must already have a PDF reader (Acrobat Reader, Foxit Mobile PDF, etc. ) installed on your mobile device. Otherwise this will not work
-
 
 - [It is reported](https://github.com/pwlin/cordova-plugin-file-opener2/issues/2#issuecomment-41295793) that in iOS, you might need to remove `<preference name="iosPersistentFileLocation" value="Library" />` from your `config.xml`
 
@@ -88,7 +91,8 @@ LICENSE
 --------
 The MIT License (MIT)
 
-Copyright (c) 2013 pwlin - pwlin05@gmail.com
+Copyright (c) 2015 Martin Langasek (fork)
+Copyright (c) 2013 pwlin - pwlin05@gmail.com (original version)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
