@@ -1,4 +1,4 @@
-A File Opener Plugin for Cordova (The Original Version)
+A File Opener Plugin for Cordova (fork)
 ==========================
 This plugin will open a file on your device file system with its default application.
 
